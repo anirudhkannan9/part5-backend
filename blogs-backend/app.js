@@ -10,6 +10,7 @@ const loginRouter = require('./controllers/login')
 const mongoose = require('mongoose')
 
 const app = express()
+app.use(express.static('build'))
 
 mongoose.set('useCreateIndex', true)
 
